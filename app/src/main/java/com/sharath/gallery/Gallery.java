@@ -83,6 +83,7 @@ public class Gallery extends AppCompatActivity {
         if(mode==1 || mode==2) {
             adapter.addFragment(new OneFragment(), "Images");
         }
+        viewPager.setAdapter(adapter);
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
